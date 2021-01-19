@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="engine\renderer\main.cpp" />
+    <ClCompile Include="engine\renderer\glad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="engine\renderer\camera.h" />
+    <ClInclude Include="engine\renderer\main.h" />
+    <ClInclude Include="engine\renderer\mesh.h" />
+    <ClInclude Include="engine\renderer\model.h" />
+    <ClInclude Include="engine\renderer\object.h" />
+    <ClInclude Include="engine\renderer\Shader.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9345071C-2447-4823-AB70-4A56D62F6CDC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Neural</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\lib\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\lib\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\lib-vc2017;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\lib\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\lib\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\lib-vc2017;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\lib\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\lib\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\lib-vc2017;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\lib\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\build\lib\Debug;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\lib-vc2017;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\assimp-4.1.0;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\stb-master;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glm-0.9.9.5\glm;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glad\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc141-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\assimp-4.1.0;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\stb-master;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glm-0.9.9.5\glm;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glad\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\stb-master;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.bin.WIN64\glfw-3.3.bin.WIN64\lib-vc2017;V:\VulkanSDK\1.1.108.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc141-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\assimp-4.1.0;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\stb-master;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glm-0.9.9.5\glm;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glad\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc141-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\assimp-4.1.0;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\stb-master;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glm-0.9.9.5\glm;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.1.bin.WIN32\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glad\include;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\ASSIMP-20191125T011840Z-001\ASSIMP\assimp-5.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\stb-master;V:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\Libraries\glfw-3.3.bin.WIN64\glfw-3.3.bin.WIN64\lib-vc2017;V:\VulkanSDK\1.1.108.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc141-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
